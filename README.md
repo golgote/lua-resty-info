@@ -14,7 +14,7 @@ Add this to your nginx configuration
 ```
 location /info {
     content_by_lua '
-      local info = require 'resty.info'
+      local info = require "resty.info"
       info()';
 }
 ```
